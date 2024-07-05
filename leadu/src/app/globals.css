@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .lead-btn{
+    @apply inline-block px-6 font-semibold py-2 border-2 border-[#0c6bac]  text-[#0c6bac] hover:bg-[#0c6bac] hover:text-white transition-colors duration-300;
+  }
+}
+
+body{
+ background-color: black;
+}
