@@ -321,7 +321,7 @@ export default function Nav() {
                 </li>
                 <li className="relative group">
                   <Link
-                    href="/learning"
+                    href="#"
                     className={`${isActive("/learning")} rounded-full p-2`}
                   >
                     Learning
@@ -555,8 +555,8 @@ export default function Nav() {
               </li>
               <li className="relative group">
                 <Link
-                  href="/learning"
-                  className={`${isActive("/learning")} rounded-full p-2`}
+                  href="#"
+                  className={`${isActive("#")} rounded-full p-2`}
                 >
                   Learning
                 </Link>
