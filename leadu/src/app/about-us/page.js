@@ -1,8 +1,23 @@
 import Image from "next/image";
-import Link from "next/link";
+import Head from "next/head";
 export default function About_Us() {
   return (
     <>
+      <Head>
+        <title>About Us - Lead U</title>
+        <meta name="description" content="Learn more about Lead U, our mission, vision, and the courses we offer. Join us to explore the world of knowledge." />
+        <meta name="keywords" content="Lead U, About Us, Education, Courses, Learning, Quran Academy" />
+        <meta name="author" content="Lead U" />
+        <meta property="og:title" content="About Us - Lead U" />
+        <meta property="og:description" content="Discover more about Lead U, our values, and the educational opportunities we provide." />
+        <meta property="og:image" content="/path-to-social-media-image.jpg" />
+        <meta property="og:url" content="https://www.leadu.com/about-us" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us - Lead U" />
+        <meta name="twitter:description" content="Explore Lead U and learn about our commitment to education and our range of courses." />
+        <meta name="twitter:image" content="/path-to-twitter-image.jpg" />
+        <link rel="canonical" href="https://www.leadu.com/about-us" />
+      </Head>
       <main className="flex flex-col items-center justify-between">
         <div className="relative w-full md:h-[491px] justify-center items-center">
           <Image

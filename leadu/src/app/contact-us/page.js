@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { FaPhone } from "react-icons/fa6";
-
 import { useState } from "react";
 export default function Contact_us() {
   const [formData, setFormData] = useState({
@@ -27,6 +27,36 @@ export default function Contact_us() {
   };
   return (
     <>
+      <Head>
+        <title>Contact Us - Lead U</title>
+        <meta
+          name="description"
+          content="Get in touch with Lead U for any inquiries or support. We are here to assist you with all your educational needs and questions."
+        />
+        <meta
+          name="keywords"
+          content="Lead U Contact, Contact Us, Support, Inquiries, Educational Support, Contact Information"
+        />
+        <meta name="author" content="Lead U" />
+        
+        <meta property="og:title" content="Contact Us - Lead U" />
+        <meta
+          property="og:description"
+          content="Reach out to Lead U for assistance with your educational journey. Our team is ready to answer your questions and provide the support you need."
+        />
+        <meta property="og:image" content="/images/contact-us-social.jpg" />
+        <meta property="og:url" content="https://www.leadu.com/contact" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us - Lead U" />
+        <meta
+          name="twitter:description"
+          content="Contact Lead U for any inquiries or support. We are here to assist you with all your educational needs and questions."
+        />
+        <meta name="twitter:image" content="/images/contact-us-twitter.jpg" />
+        
+        <link rel="canonical" href="https://www.leadu.com/contact" />
+      </Head>
       <main className="bg-white">
         <div id="content" role="main" className="content-area">
           <div className="flex flex-col items-center">

@@ -1,8 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Lead U - Empowering Quranic Education</title>
+        <meta
+          name="description"
+          content="Lead U is dedicated to empowering Quranic education through innovative learning approaches. Explore our courses and programs designed to deepen your understanding and connection with the Quran."
+        />
+        <meta
+          name="keywords"
+          content="Lead U, Quranic Education, Quran Courses, Islamic Studies, Online Learning"
+        />
+        <meta name="author" content="Lead U" />
+
+        <meta property="og:title" content="Lead U - Empowering Quranic Education" />
+        <meta
+          property="og:description"
+          content="Join Lead U to deepen your understanding of the Quran through innovative courses and programs. Discover our online Quranic education platform today."
+        />
+        <meta property="og:image" content="/images/leadu-social.jpg" />
+        <meta property="og:url" content="https://www.leadu.com/" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Lead U - Empowering Quranic Education" />
+        <meta
+          name="twitter:description"
+          content="Explore Lead U's innovative approach to Quranic education. Join our online platform to deepen your understanding of the Quran and Islamic studies."
+        />
+        <meta name="twitter:image" content="/images/leadu-twitter.jpg" />
+
+        <link rel="canonical" href="https://www.leadu.com/" />
+      </Head>
+
       <main className="flex flex-col items-center justify-between">
         <div className="relative w-full max-h-[1041px] h-auto">
           <Image
