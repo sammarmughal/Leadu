@@ -279,7 +279,7 @@ export default function Nav() {
                   <div
                     onMouseEnter={() => toggleDropdown("e-library")}
                     className={`rounded-full py-1 px-3 hover:bg-[#0c6bac] hover:text-white flex gap-2 items-center cursor-pointer${
-                      isActive("#") || isActive("#") || isActive("#")
+                      isActive("/e-quran") || isActive("/e-hadith") || isActive("/others")
                         ? "hover:bg-[#0c6bac] "
                         : ""
                     }`}
@@ -294,7 +294,7 @@ export default function Nav() {
                     >
                       <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
                         <Link
-                          href="#"
+                          href="/e-quran"
                           className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
                         >
                           E-Quran
@@ -302,7 +302,7 @@ export default function Nav() {
                       </li>
                       <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
                         <Link
-                          href="#"
+                          href="/e-hadith"
                           className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
                         >
                           E-Hadith
@@ -310,7 +310,7 @@ export default function Nav() {
                       </li>
                       <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
                         <Link
-                          href="#"
+                          href="/others"
                           className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
                         >
                           Others
@@ -321,7 +321,7 @@ export default function Nav() {
                 </li>
                 <li className="relative group">
                   <Link
-                    href="#"
+                    href="/learning"
                     className={`${isActive("/learning")} rounded-full p-2`}
                   >
                     Learning
@@ -511,7 +511,7 @@ export default function Nav() {
               <li className="relative group">
                 <div
                   className={`rounded-full py-1 px-3 hover:bg-[#0c6bac] justify-between hover:text-white flex gap-2 items-center cursor-pointer${
-                    isActive("#") || isActive("#") || isActive("#")
+                    isActive("/e-quran") || isActive("/e-hadith") || isActive("/others")
                       ? "hover:bg-[#0c6bac] "
                       : ""
                   }`}
@@ -528,7 +528,7 @@ export default function Nav() {
                   <ul className="mt-2 p-2 text-neutral-500 normal-case font-light">
                     <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
                       <Link
-                        href="#"
+                        href="/e-quran"
                         className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
                       >
                         E-Quran
@@ -536,7 +536,7 @@ export default function Nav() {
                     </li>
                     <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
                       <Link
-                        href="#"
+                        href="/e-hadith"
                         className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
                       >
                         E-Hadith
@@ -544,7 +544,7 @@ export default function Nav() {
                     </li>
                     <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
                       <Link
-                        href="#"
+                        href="/others"
                         className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
                       >
                         Others
@@ -555,8 +555,8 @@ export default function Nav() {
               </li>
               <li className="relative group">
                 <Link
-                  href="#"
-                  className={`${isActive("#")} rounded-full p-2`}
+                  href="/learning"
+                  className={`${isActive("/learning")} rounded-full p-2`}
                 >
                   Learning
                 </Link>
