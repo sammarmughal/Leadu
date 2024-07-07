@@ -18,7 +18,7 @@ export default function Admissions() {
   };
   const handleFileDelete = () => {
     setFileName(null);
-    fileInputRef.current.value = null; // Reset file input value
+    fileInputRef.current.value = null; 
   };
 
   return (
@@ -34,7 +34,7 @@ export default function Admissions() {
             className="cursor-pointer bg-cover mx-auto w-full"
           />
         </div>
-        <div className="flex flex-col lg:flex-row lg:justify-between">
+        <div className="px-6 flex flex-col md:flex-row gap-6 md:justify-between">
           <div className="lg:w-1/2 text-center mb-8 lg:mb-0">
             <div className="relative shadow-lg hover:shadow-2xl">
               <Image
@@ -48,9 +48,9 @@ export default function Admissions() {
             </div>
           </div>
 
-          <div className="lg:w-1/2 text-left p-4 lg:p-8">
+          <div className="lg:w-1/2 text-left py-4">
             <div className="mb-6">
-              <h3 className="text-2xl mb-4">
+              <h3 className="md:text-2xl text-lg mb-4">
                 ELIGIBILITY CRITERIA FOR ADMISSION
               </h3>
               <ol className="list-decimal ml-5">
@@ -77,13 +77,12 @@ export default function Admissions() {
             </div>
           </div>
         </div>
-        <div className="py-10 max-w-[1000px] mx-auto">
+        <div className="py-10 max-w-[1000px] lg:mx-auto mx-6">
           <h1 className="text-3xl my-4">Admission Form</h1>
           <p className="mb-4">
             Get yourself registered by filling the form below.
           </p>
           <form action="/admission/submit" method="post" className="space-y-4 mb-10">
-            {/* Basic Information */}
             <h2 className="text-2xl mb-4">Basic Information</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div>
@@ -254,8 +253,6 @@ export default function Admissions() {
                 required
               />
             </label>
-
-            {/* Educational History */}
             <h2 className="text-2xl my-4">Educational History</h2>
             <p className="mb-4">
               Islamic, College, University and School where you studied.
@@ -263,8 +260,8 @@ export default function Admissions() {
             <table className="w-full mb-4 border-none">
               <tbody>
                 <tr className="border-b pb-4">
-                  <td className="px-4 py-4 text-neutral-500">Hifz-ul-Quran</td>
-                  <td className="px-4 py-4">
+                  <td className="sm:px-4 px-1 py-4 text-neutral-500">Hifz-ul-Quran</td>
+                  <td className="sm:px-4 px-1 py-4">
                     <input
                       type="text"
                       name="hifz-institute"
@@ -273,7 +270,7 @@ export default function Admissions() {
                       required
                     />
                   </td>
-                  <td className="px-4 py-2">
+                  <td className="sm:px-4 px-1 py-2">
                     <input
                       type="text"
                       name="hifz-duration"
@@ -282,7 +279,7 @@ export default function Admissions() {
                       required
                     />
                   </td>
-                  <td className="px-4 py-2">
+                  <td className="sm:px-4 px-1 py-2">
                     <input
                       type="text"
                       name="hifz-status"
@@ -293,8 +290,8 @@ export default function Admissions() {
                   </td>
                 </tr>
                 <tr className="border-b">
-                  <td className="px-4 py-4 text-neutral-500">Dawra-e-Hadith</td>
-                  <td className="px-4 py-4">
+                  <td className="sm:px-4 px-1 py-4 text-neutral-500">Dawra-e-Hadith</td>
+                  <td className="sm:px-4 px-1 py-4">
                     <input
                       type="text"
                       name="dawra-institute"
@@ -303,7 +300,7 @@ export default function Admissions() {
                       required
                     />
                   </td>
-                  <td className="px-4 py-2">
+                  <td className="sm:px-4 px-1 py-2">
                     <input
                       type="text"
                       name="dawra-duration"
@@ -312,7 +309,7 @@ export default function Admissions() {
                       required
                     />
                   </td>
-                  <td className="px-4 py-2">
+                  <td className="sm:px-4 px-1 py-2">
                     <input
                       type="text"
                       name="dawra-status"
@@ -323,10 +320,10 @@ export default function Admissions() {
                   </td>
                 </tr>
                 <tr className="border-b">
-                  <td className="px-4 py-4 text-neutral-500">
+                  <td className="sm:px-4 px-1 py-4 text-neutral-500">
                     Dawra-e-Tafseer
                   </td>
-                  <td className="px-4 py-4">
+                  <td className="sm:px-4 px-1 py-4">
                     <input
                       type="text"
                       name="qirat-institute"
@@ -335,7 +332,7 @@ export default function Admissions() {
                       required
                     />
                   </td>
-                  <td className="px-4 py-2">
+                  <td className="sm:px-4 px-1 py-2">
                     <input
                       type="text"
                       name="qirat-duration"
@@ -344,7 +341,7 @@ export default function Admissions() {
                       required
                     />
                   </td>
-                  <td className="px-4 py-2">
+                  <td className="sm:px-4 px-1 py-2">
                     <input
                       type="text"
                       name="qirat-status"
@@ -355,8 +352,8 @@ export default function Admissions() {
                   </td>
                 </tr>
                 <tr className="border-b">
-                  <td className="px-4 py-4 text-neutral-500">Iftaa</td>
-                  <td className="px-4 py-4">
+                  <td className="sm:px-4 px-1 py-4 text-neutral-500">Iftaa</td>
+                  <td className="sm:px-4 px-1 py-4">
                     <input
                       type="text"
                       name="school-institute"
@@ -365,7 +362,7 @@ export default function Admissions() {
                       required
                     />
                   </td>
-                  <td className="px-4 py-2">
+                  <td className="sm:px-4 px-1 py-2">
                     <input
                       type="text"
                       name="school-duration"
@@ -374,7 +371,7 @@ export default function Admissions() {
                       required
                     />
                   </td>
-                  <td className="px-4 py-2">
+                  <td className="sm:px-4 px-1 py-2">
                     <input
                       type="text"
                       name="school-status"
@@ -385,10 +382,10 @@ export default function Admissions() {
                   </td>
                 </tr>
                 <tr className="border-b">
-                  <td className="px-4 py-4 text-neutral-500">
+                  <td className="sm:px-4 px-1 py-4 text-neutral-500">
                     Additional Education
                   </td>
-                  <td className="px-4 py-4">
+                  <td className="sm:px-4 px-1 py-4">
                     <input
                       type="text"
                       name="college-institute"
@@ -397,7 +394,7 @@ export default function Admissions() {
                       required
                     />
                   </td>
-                  <td className="px-4 py-2">
+                  <td className="sm:px-4 px-1 py-2">
                     <input
                       type="text"
                       name="college-duration"
@@ -406,7 +403,7 @@ export default function Admissions() {
                       required
                     />
                   </td>
-                  <td className="px-4 py-2">
+                  <td className="sm:px-4 px-1 py-2">
                     <input
                       type="text"
                       name="college-status"
@@ -428,7 +425,7 @@ export default function Admissions() {
               </button>
             </div>
           </form>
-          <div className="flex flex-row justify-between items-center py-20" id="row-543910648">
+          <div className="flex md:flex-row flex-col justify-between items-center py-20" id="row-543910648">
             <div id="col-735748507" className="">
               <div className="col-inner text-left">
                 <h2 className="text-3xl font-medium">Contact us!</h2>

@@ -9,15 +9,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { FaLocationDot } from "react-icons/fa6";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
-  const router = useRouter();
-  const pathname = usePathname(); // Use usePathname instead of router.pathname
+  const pathname = usePathname();
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleDropdown = (dropdown) => {
@@ -27,6 +26,11 @@ export default function Nav() {
     pathname === path
       ? "bg-[#0c6bac] text-white"
       : "hover:bg-[#0c6bac] hover:text-white";
+
+  const closeMenu = () => {
+    setIsOpen(false);
+    setOpenDropdown(null);
+  };
 
   return (
     <nav className="relative flex flex-col">
@@ -99,23 +103,18 @@ export default function Nav() {
       </section>
       <section className="relative">
         <div className="w-full bg-white shadow-md top-0 z-50">
-          <div className="flex max-w-[1100px] mx-auto justify-around items-center w-full h-28 sm:px-4">
+          <div className="flex max-w-[1100px] lg:mx-auto lg:justify-around sm:px-20 px-6 justify-between items-center w-full md:h-28 lg:px-4">
             <Link href="/">
               <Image
                 src="/leadu-logo.png"
                 alt="LEAD U"
                 width={100}
                 height={55}
-                className="cursor-pointer h-full"
+                className="cursor-pointer h-full p-2 sm:p-0"
                 title="LEAD U"
               />
             </Link>
-            <div className="md:hidden">
-              {/* <IoIosMenu
-              className="text-slate-900 p-4 rounded text-black w-8"
-              fill="black"
-              strokeWidth={2}
-            /> */}
+            <div className="lg:hidden">
               <svg
                 onClick={toggleMenu}
                 xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +122,7 @@ export default function Nav() {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="w-8 h-8 text-white p-2 rounded-full bg-[#0c6bac]"
               >
                 <path
                   strokeLinecap="round"
@@ -132,7 +131,8 @@ export default function Nav() {
                 />
               </svg>
             </div>
-            <div className="hidden md:flex w-full justify-center ml-8">
+
+            <div className="hidden lg:flex w-full justify-center ml-8">
               <ul className="flex flex-row text-[#0c6bac] uppercase whitespace-nowrap font-bold text-sm items-center">
                 <li className="relative group">
                   <Link
@@ -152,7 +152,7 @@ export default function Nav() {
                     }`}
                   >
                     About Lead
-                    <MdKeyboardArrowDown className="text-slate-700" />
+                    <MdKeyboardArrowDown className="text-neutral-500" />
                   </div>
                   {openDropdown === "about us" && (
                     <ul
@@ -178,7 +178,7 @@ export default function Nav() {
                     }`}
                   >
                     Courses
-                    <MdKeyboardArrowDown className="text-slate-700" />
+                    <MdKeyboardArrowDown className="text-neutral-500" />
                   </div>
                   {openDropdown === "courses" && (
                     <ul
@@ -203,7 +203,7 @@ export default function Nav() {
                     }`}
                   >
                     Admissions
-                    <MdKeyboardArrowDown className="text-slate-700" />
+                    <MdKeyboardArrowDown className="text-neutral-500" />
                   </div>
                   {openDropdown === "admissions" && (
                     <ul
@@ -249,7 +249,7 @@ export default function Nav() {
                     }`}
                   >
                     Media
-                    <MdKeyboardArrowDown className="text-slate-700" />
+                    <MdKeyboardArrowDown className="text-neutral-500" />
                   </div>
                   {openDropdown === "Media" && (
                     <ul
@@ -272,7 +272,6 @@ export default function Nav() {
                           Videos
                         </Link>
                       </li>
-                      
                     </ul>
                   )}
                 </li>
@@ -286,7 +285,7 @@ export default function Nav() {
                     }`}
                   >
                     E-library
-                    <MdKeyboardArrowDown className="text-slate-700" />
+                    <MdKeyboardArrowDown className="text-neutral-500" />
                   </div>
                   {openDropdown === "e-library" && (
                     <ul
@@ -316,7 +315,7 @@ export default function Nav() {
                         >
                           Others
                         </Link>
-                      </li>                      
+                      </li>
                     </ul>
                   )}
                 </li>
@@ -330,10 +329,247 @@ export default function Nav() {
                 </li>
               </ul>
             </div>
-              <Link href="/admissions" className="md:ml-4"><button className="rounded-full py-1 text-white whitespace-nowrap px-3 flex gap-2 items-center bg-[#73b5e0] hover:bg-[#5085a6] cursor-pointer">Apply Now</button></Link>
+            <Link href="/admissions" className="md:ml-4 lg:block hidden">
+              <button className="rounded-full py-1 text-white whitespace-nowrap px-3 flex gap-2 items-center bg-[#73b5e0] hover:bg-[#5085a6] cursor-pointer">
+                Apply Now
+              </button>
+            </Link>
           </div>
         </div>
       </section>
+      {isOpen && (
+        <div className="fixed inset-0 z-40 lg:hidden block">
+          <div
+            className="absolute inset-0 bg-black opacity-50"
+            onClick={toggleMenu}
+          ></div>
+          <svg
+            onClick={toggleMenu}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6 mt-4 ml-2 text-neutral-400"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+          <div className="absolute right-0 top-0 bg-white shadow h-full w-2/3 sm:w-1/3 z-50 p-4">
+            <ul className="mt-4 space-y-4 text-neutral-500">
+              <li className="relative group">
+                <Link
+                  href="/"
+                  className={`${isActive("/")} rounded-full py-1 px-3`}
+                  onClick={closeMenu}
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="relative group">
+                <div
+                  className={`rounded-full py-1 px-3 justify-between flex items-center gap-2 cursor-pointer ${
+                    isActive("/about-us") || isActive("/contact-us")
+                      ? "hover:bg-[#0c6bac] hover:text-white"
+                      : ""
+                  }`}
+                >
+                  About Lead
+                  <MdKeyboardArrowDown
+                    onClick={() => toggleDropdown("about us")}
+                    className={`text-neutral-500 group-hover:text-white transform transition-transform ${
+                      openDropdown === "about us" ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+                {openDropdown === "about us" && (
+                  <ul className="mt-2 p-2 text-neutral-500 normal-case font-light">
+                    <li className="hover:bg-[#0c6bac] hover:text-white my-1 rounded-full py-1 px-3">
+                      <Link href="/about-us"   onClick={closeMenu}>About Us</Link>
+                    </li>
+                    <li className="hover:bg-[#0c6bac] hover:text-white my-1 rounded-full py-1 px-3">
+                      <Link href="/contact-us"   onClick={closeMenu}>Contact Us</Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li className="relative group">
+                <div
+                  className={`rounded-full justify-between py-1 px-3 flex items-center gap-2 cursor-pointer ${
+                    isActive("/takhasus-fil-quran")
+                      ? "hover:bg-[#0c6bac] hover:text-white"
+                      : ""
+                  }`}
+                >
+                  Courses
+                  <MdKeyboardArrowDown
+                    onClick={() => toggleDropdown("courses")}
+                    className={`text-neutral-500 group-hover:text-white transform transition-transform ${
+                      openDropdown === "courses" ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+                {openDropdown === "courses" && (
+                  <ul className="mt-2 p-2 text-neutral-500 normal-case font-light">
+                    <li className="hover:bg-[#0c6bac] hover:text-white my-1 rounded-full py-1 px-3">
+                      <Link href="/takhasus-fil-quran"   onClick={closeMenu}>
+                        Al’ Takhasus Fil Quran Wa’ Tafseer
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li className="relative group">
+                <div
+                  className={`rounded-full justify-between py-1 px-3 flex gap-2 items-center cursor-pointer ${
+                    isActive("/admissions")
+                      ? "hover:bg-[#0c6bac] hover:text-white"
+                      : ""
+                  }`}
+                >
+                  Admissions
+                  <MdKeyboardArrowDown
+                    onClick={() => toggleDropdown("admissions")}
+                    className={`text-neutral-500 group-hover:text-white transform transition-transform ${
+                      openDropdown === "admissions" ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+                {openDropdown === "admissions" && (
+                  <ul className="mt-2 p-2 text-neutral-500 normal-case font-light">
+                    <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
+                      <Link
+                        href="/leadu-prospectus-final.pdf"
+                        className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
+                      >
+                        Download Prospectus
+                      </Link>
+                    </li>
+                    <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
+                      <Link
+                        href="/admission-form.pdf"
+                        className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
+                      >
+                        Download Admission Form{" "}
+                      </Link>
+                    </li>
+                    <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
+                      <Link
+                        href="/admissions"
+                        className={`rounded-full py-1 px-3 flex items-center cursor-pointer ${isActive(
+                          "/admissions"
+                        )}`}   onClick={closeMenu}
+                      >
+                        Apply Now{" "}
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li className="relative group">
+                <div
+                  className={`rounded-full justify-between py-1 px-3 flex gap-2 items-center cursor-pointer ${
+                    isActive("/audios") || isActive("/videos")
+                      ? "hover:bg-[#0c6bac] hover:text-white"
+                      : ""
+                  }`}
+                >
+                  Media
+                  <MdKeyboardArrowDown
+                    onClick={() => toggleDropdown("Media")}
+                    className={`text-neutral-500 group-hover:text-white transform transition-transform ${
+                      openDropdown === "Media" ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+                {openDropdown === "Media" && (
+                  <ul className="mt-2 p-2 text-neutral-500 normal-case font-light">
+                    <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
+                      <Link
+                        href="/audios"
+                        className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
+                        onClick={closeMenu}
+                      >
+                        Audios
+                      </Link>
+                    </li>
+                    <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
+                      <Link
+                        href="/videos"
+                        className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
+                        onClick={closeMenu}
+                      >
+                        Videos
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li className="relative group">
+                <div
+                  className={`rounded-full py-1 px-3 hover:bg-[#0c6bac] justify-between hover:text-white flex gap-2 items-center cursor-pointer${
+                    isActive("#") || isActive("#") || isActive("#")
+                      ? "hover:bg-[#0c6bac] "
+                      : ""
+                  }`}
+                >
+                  E-library
+                  <MdKeyboardArrowDown
+                    onClick={() => toggleDropdown("e-library")}
+                    className={`text-neutral-500 group-hover:text-white transform transition-transform ${
+                      openDropdown === "e-library" ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+                {openDropdown === "e-library" && (
+                  <ul className="mt-2 p-2 text-neutral-500 normal-case font-light">
+                    <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
+                      <Link
+                        href="#"
+                        className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
+                      >
+                        E-Quran
+                      </Link>
+                    </li>
+                    <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
+                      <Link
+                        href="#"
+                        className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
+                      >
+                        E-Hadith
+                      </Link>
+                    </li>
+                    <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
+                      <Link
+                        href="#"
+                        className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
+                      >
+                        Others
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li className="relative group">
+                <Link
+                  href="/learning"
+                  className={`${isActive("/learning")} rounded-full p-2`}
+                >
+                  Learning
+                </Link>
+              </li>
+              <Link href="/admissions" className="md:ml-4 mt-6"   onClick={closeMenu}>
+                <button className="rounded-full py-1 mt-6 text-white whitespace-nowrap px-3 flex gap-2 items-center bg-[#73b5e0] hover:bg-[#5085a6] cursor-pointer">
+                  Apply Now
+                </button>
+              </Link>
+            </ul>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

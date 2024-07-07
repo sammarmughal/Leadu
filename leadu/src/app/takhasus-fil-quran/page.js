@@ -4,14 +4,14 @@ export default function About_Us() {
   return (
     <>
       <main className="flex flex-col items-center justify-between">
-        <div className="relative w-full h-[491px] justify-center items-center">
+        <div className="relative w-full md:h-[491px] justify-center items-center">
           <Image
             src="/banner.jpg"
             alt="Lead U Background"
             width={1500}
             height={382}
             objectFit="cover"
-            className="cursor-pointer w-full h-[100%]"
+            className="cursor-pointer w-full md:h-[100%]"
             title="Lead U Background"
           />        
         </div>
@@ -19,14 +19,14 @@ export default function About_Us() {
       <section className="pb-10 pt-2 bg-white" id="section_1601293061">
         <div className="relative  py-10 flex justify-center items-center">
           <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-2xl font-noraml tracking-wide uppercase">Syllabus/Properties</h1>
+          <h1 className="md:text-2xl text-xl font-noraml tracking-wide uppercase">Syllabus/Properties</h1>
             <div className="hover:opacity-90 flex justify-center w-full">
               <Image
                 src="/sallybus-1536x530.jpg"
                 alt="Welcome Note"
                 width={436}
                 height={156}
-                className=""
+                className="md:w-auto w-[70%]"
               />
             </div>
             <div className="my-6 pb-5">

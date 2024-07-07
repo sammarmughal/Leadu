@@ -4,7 +4,7 @@ export default function About_Us() {
   return (
     <>
       <main className="flex flex-col items-center justify-between">
-        <div className="relative w-full h-[491px] justify-center items-center">
+        <div className="relative w-full md:h-[491px] justify-center items-center">
           <Image
             src="/background.png"
             alt="Lead U Background"
@@ -12,16 +12,16 @@ export default function About_Us() {
             width={1500}
             height={382}
             objectFit="cover"
-            className="cursor-pointer w-full h-[100%]"
+            className="cursor-pointer w-full md:h-[100%]"
             title="Lead U Background"
           />
           <div className="absolute inset-0 z-10 flex flex-col justify-center items-center">
             <Image
               src="/leadu-and-quran-academy-logo.png"
               alt="leadu and quran academy logo"
-              width={500}
+              width={600}
               height={200}
-              className="cursor-pointer hover:grayscale h-auto"
+              className="cursor-pointer hover:grayscale md:h-auto h-[80%] md:w-auto w-[80%]"
               title="leadu and quran academy logo"
             />
           </div>
@@ -36,7 +36,7 @@ export default function About_Us() {
                 alt="Welcome Note"
                 width={336}
                 height={206}
-                className=""
+                className="md:h-auto h-[80%] md:w-auto w-[50%]"
               />
             </div>
             <div className="my-6">
