@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function About_Us() {
   return (
     <>
-       {/* <Head>
+       <Head>
         <title>Takhasus-fil-Quran - Lead U</title>
         <meta
           name="description"
@@ -20,8 +20,8 @@ export default function About_Us() {
           property="og:description"
           content="Join the Takhasus-fil-Quran program at Lead U to enhance your knowledge and proficiency in Quranic studies. Our curriculum is designed for advanced learners seeking deeper insights into the Quran."
         />
-        <meta property="og:image" content="/images/takhasus-quran-social.jpg" />
-        <meta property="og:url" content="https://www.leadu.com/takhasus-fil-quran" />
+        <meta property="og:image" content="/leadu-logo.png" />
+        <meta property="og:url" content="https://www.leadu.pk/takhasus-fil-quran" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Takhasus-fil-Quran - Lead U" />
@@ -29,10 +29,10 @@ export default function About_Us() {
           name="twitter:description"
           content="Enroll in the Takhasus-fil-Quran program at Lead U to advance your Quranic studies. Our expert-led courses are designed to provide deep and comprehensive knowledge of the Quran."
         />
-        <meta name="twitter:image" content="/images/takhasus-quran-twitter.jpg" />
+        <meta name="twitter:image" content="/leadu-logo.png" />
         
-        <link rel="canonical" href="https://www.leadu.com/takhasus-fil-quran" />
-      </Head> */}
+        <link rel="canonical" href="https://www.leadu.pk/takhasus-fil-quran" />
+      </Head>
       <main className="flex flex-col items-center justify-between">
         <div className="relative w-full md:h-[491px] justify-center items-center">
           <Image

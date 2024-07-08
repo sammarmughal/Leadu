@@ -27,7 +27,7 @@ export default function Contact_us() {
   };
   return (
     <>
-      {/* <Head>
+      <Head>
         <title>Contact Us - Lead U</title>
         <meta
           name="description"
@@ -44,8 +44,8 @@ export default function Contact_us() {
           property="og:description"
           content="Reach out to Lead U for assistance with your educational journey. Our team is ready to answer your questions and provide the support you need."
         />
-        <meta property="og:image" content="/images/contact-us-social.jpg" />
-        <meta property="og:url" content="https://www.leadu.com/contact" />
+        <meta property="og:image" content="/leadu-logo.png" />
+        <meta property="og:url" content="https://www.leadu.pk/contact" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Us - Lead U" />
@@ -53,10 +53,10 @@ export default function Contact_us() {
           name="twitter:description"
           content="Contact Lead U for any inquiries or support. We are here to assist you with all your educational needs and questions."
         />
-        <meta name="twitter:image" content="/images/contact-us-twitter.jpg" />
+        <meta name="twitter:image" content="/leadu-logo.png" />
         
-        <link rel="canonical" href="https://www.leadu.com/contact" />
-      </Head> */}
+        <link rel="canonical" href="https://www.leadu.pk/contact" />
+      </Head>
       <main className="bg-white">
         <div id="content" role="main" className="content-area">
           <div className="flex flex-col items-center">

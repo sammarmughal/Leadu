@@ -149,7 +149,7 @@ export default function Videos() {
   ];
   return (
     <>
-      {/* <Head>
+      <Head>
         <title>Video Library - Lead U</title>
         <meta
           name="description"
@@ -165,17 +165,17 @@ export default function Videos() {
           property="og:description"
           content="Discover a wide range of educational videos in our video library at Lead U. Enhance your knowledge with our carefully selected video content."
         />
-        <meta property="og:image" content="/path-to-social-media-image.jpg" />
-        <meta property="og:url" content="https://www.leadu.com/videos" />
+        <meta property="og:image" content="/leadu-logo.png" />
+        <meta property="og:url" content="https://www.leadu.pk/videos" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Video Library - Lead U" />
         <meta
           name="twitter:description"
           content="Access a diverse collection of educational videos at Lead U. From instructional videos to insightful content, our video library offers something for everyone."
         />
-        <meta name="twitter:image" content="/path-to-twitter-image.jpg" />
-        <link rel="canonical" href="https://www.leadu.com/videos" />
-      </Head> */}
+        <meta name="twitter:image" content="/leadu-logo.png" />
+        <link rel="canonical" href="https://www.leadu.pk/videos" />
+      </Head>
       <main className="bg-white">
         <div>
           <Image

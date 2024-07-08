@@ -4,7 +4,7 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-      {/* <Head>
+      <Head>
         <title>Lead U - Empowering Quranic Education</title>
         <meta
           name="description"
@@ -31,7 +31,7 @@ export default function Home() {
         />
         <meta name="twitter:image" content="/leadu-logo.png" />
 
-      </Head> */}
+      </Head>
 
       <main className="flex flex-col items-center justify-between">
         <div className="relative w-full max-h-[1041px] h-auto">

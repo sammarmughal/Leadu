@@ -24,7 +24,7 @@ export default function Admissions() {
 
   return (
     <>
-      {/* <Head>
+      <Head>
         <title>Admissions - Lead U</title>
         <meta
           name="description"
@@ -40,17 +40,17 @@ export default function Admissions() {
           property="og:description"
           content="Discover how to apply to Lead U and start your educational journey with us. Learn about our programs and the admissions criteria."
         />
-        <meta property="og:image" content="/path-to-social-media-image.jpg" />
-        <meta property="og:url" content="https://www.leadu.com/admissions" />
+        <meta property="og:image" content="/leadu-logo.png" />
+        <meta property="og:url" content="https://www.leadu.pk/admissions" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Admissions - Lead U" />
         <meta
           name="twitter:description"
           content="Find out how you can join Lead U. Explore our admissions process and learn about the requirements and opportunities available."
         />
-        <meta name="twitter:image" content="/path-to-twitter-image.jpg" />
-        <link rel="canonical" href="https://www.leadu.com/admissions" />
-      </Head> */}
+        <meta name="twitter:image" content="/leadu-logo.png" />
+        <link rel="canonical" href="https://www.leadu.pk/admissions" />
+      </Head>
       <div className="bg-white">
         <main className="max-w-[1100px] w-full mx-auto bg-white">
           <div className="relative w-full justify-center items-center">
