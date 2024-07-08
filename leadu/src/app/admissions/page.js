@@ -215,7 +215,7 @@ export default function Admissions() {
                 </div>
               </div>
 
-              <label className="block font-semibold mt-4">
+              {/* <label className="block font-semibold mt-4">
                 Upload your Photograph
                 <div
                   className="border-2 border-dashed border-gray-300 rounded-md mb-2.5 relative p-4 cursor-pointer"
@@ -230,7 +230,6 @@ export default function Admissions() {
                       Browse File from your Device
                     </div>
                   </div>
-                  {/* Hidden file input */}
                   <input
                     type="file"
                     name="photo"
@@ -266,7 +265,7 @@ export default function Admissions() {
                     />
                   </svg>
                 </div>
-              )}
+              )} */}
               <label className="block font-semibold mt-4">
                 Current Residence Address *
                 <input
