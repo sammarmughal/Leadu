@@ -58,7 +58,7 @@ export default function Contact_us() {
         <link rel="canonical" href="https://www.leadu.pk/contact" />
       </Head>
       <main className="bg-white">
-        <div id="content" role="main" className="content-area">
+        <div  role="main" className="content-area">
           <div className="flex flex-col items-center">
             <div className="w-full max-w-screen-lg p-6">
               <div className="flex flex-col items-center">

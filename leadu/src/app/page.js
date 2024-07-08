@@ -40,7 +40,7 @@ export default function Home() {
             alt="Lead U Background"
             width={2000}
             height={582}
-            objectFit="cover"
+            style={{ objectFit: 'cover' }}
             className="cursor-pointer w-full bg-cover lg:h-auto h-full"
             title="Lead U Background"
           />
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <section className="pb-10 pt-2 bg-gray-100" id="section_1601293061">
+      <section className="pb-10 pt-2 bg-gray-100">
         <div className="bg-cover absolute left-0 bg-center">
           <Image
             src="/bg2.png"
@@ -99,7 +99,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="pb-10 bg-gray-100" id="videos-section">
+      <section className="pb-10 bg-gray-100" >
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-normal">Videos</h2>
@@ -113,7 +113,6 @@ export default function Home() {
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/pc2jp6CaAQU?feature=oembed"
-                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="w-full h-full"
@@ -127,7 +126,6 @@ export default function Home() {
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/ewexDu2mdEg?feature=oembed"
-                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="w-full h-full"

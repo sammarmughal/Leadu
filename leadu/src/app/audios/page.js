@@ -29,8 +29,8 @@ export default function Audios() {
         <meta name="twitter:image" content="/leadu-logo.png" />
         <link rel="canonical" href="https://www.leadu.pk/audios" />
       </Head>
-      <div className="justify-center bg-white" id="row-84246874">
-        <div id="col-916361718" className="col mx-auto  py-10 md:w-1/2 sm:w-full lg:w-1/2">
+      <div className="justify-center bg-white">
+        <div className="col mx-auto  py-10 md:w-1/2 sm:w-full lg:w-1/2">
           <div className="my-4 text-center flex flex-col gap-2">
             <h3 className="font-bold text-xl my-2">ISM-E-AZAM</h3>
             <p className="my-2">Click the play button.</p>

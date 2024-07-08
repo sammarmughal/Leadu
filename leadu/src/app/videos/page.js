@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Head from "next/head";
 export default function Videos() {
-  const videos = [
+  const vid = [
     {
       id: "1",
       title:
@@ -188,9 +188,9 @@ export default function Videos() {
           />
         </div>
         <section>
-          <div id="content" role="main" className="content-area">
+          <div  role="main" className="content-area">
             <div className="flex flex-wrap justify-center items-center py-8">
-              {videos.map((video) => (
+              {vid.map((video) => (
                 <div
                   key={video.id}
                   id={video.id}

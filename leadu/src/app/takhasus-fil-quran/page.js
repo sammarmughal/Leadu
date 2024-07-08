@@ -40,13 +40,13 @@ export default function About_Us() {
             alt="Lead U Background"
             width={1500}
             height={382}
-            objectFit="cover"
+            style={{ objectFit: 'cover' }}
             className="cursor-pointer w-full md:h-[100%]"
             title="Lead U Background"
           />        
         </div>
       </main>
-      <section className="pb-10 pt-2 bg-white" id="section_1601293061">
+      <section className="pb-10 pt-2 bg-white">
         <div className="relative  py-10 flex justify-center items-center">
           <div className="text-center max-w-4xl mx-auto">
           <h1 className="md:text-2xl text-xl font-noraml tracking-wide uppercase">Syllabus/Properties</h1>

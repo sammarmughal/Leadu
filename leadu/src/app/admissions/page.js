@@ -59,7 +59,7 @@ export default function Admissions() {
               alt="Lead U Background"
               width={1200}
               height={282}
-              objectFit="cover"
+              style={{ objectFit: 'cover' }}
               className="cursor-pointer bg-cover mx-auto w-full"
             />
           </div>
@@ -215,7 +215,7 @@ export default function Admissions() {
                 </div>
               </div>
 
-              {/* <label className="block font-semibold mt-4">
+              <label className="block font-semibold mt-4">
                 Upload your Photograph
                 <div
                   className="border-2 border-dashed border-gray-300 rounded-md mb-2.5 relative p-4 cursor-pointer"
@@ -265,7 +265,7 @@ export default function Admissions() {
                     />
                   </svg>
                 </div>
-              )} */}
+              )}
               <label className="block font-semibold mt-4">
                 Current Residence Address *
                 <input
@@ -467,9 +467,8 @@ export default function Admissions() {
             </form>
             <div
               className="flex md:flex-row flex-col justify-between items-center py-20"
-              id="row-543910648"
             >
-              <div id="col-735748507" className="">
+              <div  className="">
                 <div className="col-inner text-left">
                   <h2 className="text-3xl font-medium">Contact us!</h2>
                   <p className="lead text-lg my-4">
@@ -477,7 +476,7 @@ export default function Admissions() {
                   </p>
                 </div>
               </div>
-              <div id="col-1119556514" className="block lg:w-1/3 sm:w-full">
+              <div className="block lg:w-1/3 sm:w-full">
                 <div className="col-inner flex flex-col gap-5">
                   <Link
                     href="tel:%20+923006158327"

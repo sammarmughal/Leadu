@@ -25,7 +25,7 @@ export default function About_Us() {
             alt="Lead U Background"
             width={1500}
             height={382}
-            objectFit="cover"
+            style={{ objectFit: 'cover' }}
             className="cursor-pointer w-full md:h-[100%]"
             title="Lead U Background"
           />
@@ -41,7 +41,7 @@ export default function About_Us() {
           </div>
         </div>
       </main>
-      <section className="pb-10 pt-2 bg-gray-100" id="section_1601293061">
+      <section className="pb-10 pt-2 bg-gray-100" >
         <div className="relative  py-10 flex justify-center items-center">
           <div className="text-center max-w-4xl mx-auto">
             <div className="hover:opacity-90 flex justify-center w-full">

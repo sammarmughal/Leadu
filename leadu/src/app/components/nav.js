@@ -3,9 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faMapPin,
   faEnvelope,
-  faPhone,
+  faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { FaLocationDot } from "react-icons/fa6";
@@ -39,7 +38,7 @@ export default function Nav() {
           <ul className="flex items-center space-x-4 text-sm">
             <li className="flex items-center space-x-2">
               <Link
-                href="https://maps.google.com/?q=Sialkot Bypass, Gujranwala"
+                href="https://maps.google.com/?q=SialkotBypass,Gujranwala"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-700"
