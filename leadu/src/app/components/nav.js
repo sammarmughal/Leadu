@@ -275,7 +275,7 @@ export default function Nav() {
                     </ul>
                   )}
                 </li>
-                <li className="relative group">
+                {/* <li className="relative group">
                   <div
                     onMouseEnter={() => toggleDropdown("e-library")}
                     className={`rounded-full py-1 px-3 hover:bg-[#0c6bac] hover:text-white flex gap-2 items-center cursor-pointer${
@@ -326,7 +326,7 @@ export default function Nav() {
                   >
                     Learning
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <Link href="/admissions" className="md:ml-4 lg:block hidden">
@@ -508,7 +508,7 @@ export default function Nav() {
                   </ul>
                 )}
               </li>
-              <li className="relative group">
+              {/* <li className="relative group">
                 <div
                   className={`rounded-full py-1 px-3 hover:bg-[#0c6bac] justify-between hover:text-white flex gap-2 items-center cursor-pointer${
                     isActive("/e-quran") || isActive("/e-hadith") || isActive("/others")
@@ -560,7 +560,7 @@ export default function Nav() {
                 >
                   Learning
                 </Link>
-              </li>
+              </li> */}
               <Link href="/admissions" className="md:ml-4 mt-6"   onClick={closeMenu}>
                 <button className="rounded-full py-1 mt-6 text-white whitespace-nowrap px-3 flex gap-2 items-center bg-[#73b5e0] hover:bg-[#5085a6] cursor-pointer">
                   Apply Now
