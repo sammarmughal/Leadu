@@ -24,7 +24,7 @@ export default function Admissions() {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Admissions - Lead U</title>
         <meta
           name="description"
@@ -50,7 +50,7 @@ export default function Admissions() {
         />
         <meta name="twitter:image" content="/path-to-twitter-image.jpg" />
         <link rel="canonical" href="https://www.leadu.com/admissions" />
-      </Head>
+      </Head> */}
       <div className="bg-white">
         <main className="max-w-[1100px] w-full mx-auto bg-white">
           <div className="relative w-full justify-center items-center">

@@ -4,7 +4,7 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Lead U - Empowering Quranic Education</title>
         <meta
           name="description"
@@ -21,8 +21,7 @@ export default function Home() {
           property="og:description"
           content="Join Lead U to deepen your understanding of the Quran through innovative courses and programs. Discover our online Quranic education platform today."
         />
-        <meta property="og:image" content="/images/leadu-social.jpg" />
-        <meta property="og:url" content="https://www.leadu.com/" />
+        <meta property="og:image" content="/leadu-and-quran-academy-logo.png" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Lead U - Empowering Quranic Education" />
@@ -30,10 +29,9 @@ export default function Home() {
           name="twitter:description"
           content="Explore Lead U's innovative approach to Quranic education. Join our online platform to deepen your understanding of the Quran and Islamic studies."
         />
-        <meta name="twitter:image" content="/images/leadu-twitter.jpg" />
+        <meta name="twitter:image" content="/leadu-logo.png" />
 
-        <link rel="canonical" href="https://www.leadu.com/" />
-      </Head>
+      </Head> */}
 
       <main className="flex flex-col items-center justify-between">
         <div className="relative w-full max-h-[1041px] h-auto">

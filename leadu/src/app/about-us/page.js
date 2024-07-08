@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function About_Us() {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>About Us - Lead U</title>
         <meta name="description" content="Learn more about Lead U, our mission, vision, and the courses we offer. Join us to explore the world of knowledge." />
         <meta name="keywords" content="Lead U, About Us, Education, Courses, Learning, Quran Academy" />
@@ -17,13 +17,12 @@ export default function About_Us() {
         <meta name="twitter:description" content="Explore Lead U and learn about our commitment to education and our range of courses." />
         <meta name="twitter:image" content="/path-to-twitter-image.jpg" />
         <link rel="canonical" href="https://www.leadu.com/about-us" />
-      </Head>
+      </Head> */}
       <main className="flex flex-col items-center justify-between">
         <div className="relative w-full md:h-[491px] justify-center items-center">
           <Image
             src="/background.png"
             alt="Lead U Background"
-            // layout="fill"
             width={1500}
             height={382}
             objectFit="cover"

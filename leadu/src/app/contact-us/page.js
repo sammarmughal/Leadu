@@ -27,7 +27,7 @@ export default function Contact_us() {
   };
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Contact Us - Lead U</title>
         <meta
           name="description"
@@ -56,7 +56,7 @@ export default function Contact_us() {
         <meta name="twitter:image" content="/images/contact-us-twitter.jpg" />
         
         <link rel="canonical" href="https://www.leadu.com/contact" />
-      </Head>
+      </Head> */}
       <main className="bg-white">
         <div id="content" role="main" className="content-area">
           <div className="flex flex-col items-center">

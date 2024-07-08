@@ -149,7 +149,7 @@ export default function Videos() {
   ];
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Video Library - Lead U</title>
         <meta
           name="description"
@@ -175,7 +175,7 @@ export default function Videos() {
         />
         <meta name="twitter:image" content="/path-to-twitter-image.jpg" />
         <link rel="canonical" href="https://www.leadu.com/videos" />
-      </Head>
+      </Head> */}
       <main className="bg-white">
         <div>
           <Image

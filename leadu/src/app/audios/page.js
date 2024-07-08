@@ -2,7 +2,7 @@ import Head from "next/head";
 export default function Audios() {
   return (
     <>
-     <Head>
+     {/* <Head>
         <title>Audio Library - Lead U</title>
         <meta
           name="description"
@@ -28,7 +28,7 @@ export default function Audios() {
         />
         <meta name="twitter:image" content="/path-to-twitter-image.jpg" />
         <link rel="canonical" href="https://www.leadu.com/audios" />
-      </Head>
+      </Head> */}
       <div className="justify-center bg-white" id="row-84246874">
         <div id="col-916361718" className="col mx-auto  py-10 md:w-1/2 sm:w-full lg:w-1/2">
           <div className="my-4 text-center flex flex-col gap-2">

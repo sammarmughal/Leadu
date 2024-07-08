@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function About_Us() {
   return (
     <>
-       <Head>
+       {/* <Head>
         <title>Takhasus-fil-Quran - Lead U</title>
         <meta
           name="description"
@@ -32,7 +32,7 @@ export default function About_Us() {
         <meta name="twitter:image" content="/images/takhasus-quran-twitter.jpg" />
         
         <link rel="canonical" href="https://www.leadu.com/takhasus-fil-quran" />
-      </Head>
+      </Head> */}
       <main className="flex flex-col items-center justify-between">
         <div className="relative w-full md:h-[491px] justify-center items-center">
           <Image
