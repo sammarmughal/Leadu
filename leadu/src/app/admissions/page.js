@@ -132,7 +132,7 @@ export default function Admissions() {
                     />
                   </label>
                   <label className="block font-semibold mt-4">
-                    Father's Name *
+                    Father&#39;s Name *
                     <input
                       type="text"
                       name="father-name"
@@ -173,7 +173,7 @@ export default function Admissions() {
                 </div>
                 <div>
                   <label className="block font-semibold">
-                    Your Guardian's Name *
+                    Your Guardian&#39;s Name *
                     <input
                       type="text"
                       name="guardian-name"
@@ -183,7 +183,7 @@ export default function Admissions() {
                     />
                   </label>
                   <label className="block font-semibold mt-4">
-                    Your Guardian's CNIC # *
+                    Your Guardian&#39;s CNIC # *
                     <input
                       type="text"
                       name="guardian-cnic"
@@ -193,7 +193,7 @@ export default function Admissions() {
                     />
                   </label>
                   <label className="block font-semibold mt-4">
-                    Guardian's Mobile # *
+                    Guardian&#39;s Mobile # *
                     <input
                       type="tel"
                       name="guardian-mobile"
