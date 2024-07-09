@@ -68,7 +68,7 @@ export default function Home() {
         <div className="bg-cover absolute left-0 bg-center">
           <Image
             src="/bg2.png"
-            alt="Welcome Note"
+            alt="Bg2"
             width={1250}
             height={1024}
             className="h-full"

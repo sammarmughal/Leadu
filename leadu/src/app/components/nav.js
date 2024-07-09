@@ -7,10 +7,11 @@ import {
   faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot , FaPhone } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowDown , MdEmail } from "react-icons/md";
+
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,9 +50,8 @@ export default function Nav() {
             </li>
             <li className="flex items-center border-l border-gray-400 pl-4 space-x-2">
               <Link className="hover:text-gray-700" href="mailto:info@leadu.pk">
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  className="text-sm items-center flex text-white hover:text-slate-200"
+                <MdEmail
+                  className="items-center flex text-white hover:text-slate-200"
                   title="Send an Email"
                 />
               </Link>
@@ -62,8 +62,7 @@ export default function Nav() {
                 className="hover:text-gray-700"
                 title="+92 321 7421808"
               >
-                <FontAwesomeIcon
-                  icon={faPhone}
+                <FaPhone
                   className="text-sm items-center flex text-white hover:text-slate-200"
                 />
               </Link>
@@ -274,7 +273,7 @@ export default function Nav() {
                     </ul>
                   )}
                 </li>
-                {/* <li className="relative group">
+                <li className="relative group">
                   <div
                     onMouseEnter={() => toggleDropdown("e-library")}
                     className={`rounded-full py-1 px-3 hover:bg-[#0c6bac] hover:text-white flex gap-2 items-center cursor-pointer${
@@ -325,7 +324,7 @@ export default function Nav() {
                   >
                     Learning
                   </Link>
-                </li> */}
+                </li>
               </ul>
             </div>
             <Link href="/admissions" className="md:ml-4 lg:block hidden">
@@ -507,7 +506,7 @@ export default function Nav() {
                   </ul>
                 )}
               </li>
-              {/* <li className="relative group">
+              <li className="relative group">
                 <div
                   className={`rounded-full py-1 px-3 hover:bg-[#0c6bac] justify-between hover:text-white flex gap-2 items-center cursor-pointer${
                     isActive("/e-quran") || isActive("/e-hadith") || isActive("/others")
@@ -559,7 +558,7 @@ export default function Nav() {
                 >
                   Learning
                 </Link>
-              </li> */}
+              </li>
               <Link href="/admissions" className="md:ml-4 mt-6"   onClick={closeMenu}>
                 <button className="rounded-full py-1 mt-6 text-white whitespace-nowrap px-3 flex gap-2 items-center bg-[#73b5e0] hover:bg-[#5085a6] cursor-pointer">
                   Apply Now
