@@ -2,10 +2,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faPhone
-} from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { FaLocationDot , FaPhone } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
@@ -306,14 +302,14 @@ export default function Nav() {
                           E-Hadith
                         </Link>
                       </li>
-                      <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
+                      {/* <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
                         <Link
                           href="/others"
                           className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
                         >
                           Others
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   )}
                 </li>
@@ -540,14 +536,14 @@ export default function Nav() {
                         E-Hadith
                       </Link>
                     </li>
-                    <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
+                    {/* <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
                       <Link
                         href="/others"
                         className={`rounded-full py-1 px-3 flex items-center cursor-pointer`}
                       >
                         Others
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 )}
               </li>
