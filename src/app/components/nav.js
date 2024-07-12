@@ -324,7 +324,7 @@ export default function Nav() {
               </ul>
             </div>
             <Link href="/admissions" className="md:ml-4 lg:block hidden">
-              <button className="rounded-full py-1 text-white whitespace-nowrap px-3 flex gap-2 items-center bg-[#73b5e0] hover:bg-[#5085a6] cursor-pointer">
+              <button className="rounded-full jello-animation py-1 text-white whitespace-nowrap px-3 flex gap-2 items-center bg-[#73b5e0] hover:bg-[#5085a6] cursor-pointer">
                 Apply Now
               </button>
             </Link>
@@ -453,7 +453,7 @@ export default function Nav() {
                     <li className="hover:bg-[#0c6bac] hover:text-white rounded-full my-1 py-1 px-3">
                       <Link
                         href="/admissions"
-                        className={`rounded-full py-1 px-3 flex items-center cursor-pointer ${isActive(
+                        className={`rounded-full py-1 px-3 flex items-center cursor-pointer  ${isActive(
                           "/admissions"
                         )}`}   onClick={closeMenu}
                       >

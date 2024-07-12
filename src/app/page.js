@@ -57,7 +57,7 @@ export default function Home() {
               Registration Open For Takhasus Fil Quran Wa-Tafseer Course
             </h1>
             <div className="sm:mt-6 mt-3 w-full flex justify-center">
-              <button className="rounded-full py-1 text-white whitespace-nowrap px-3 flex gap-2 items-center bg-[#0c6bac] hover:bg-sky-800 cursor-pointer">
+              <button className="rounded-full jello-animation py-1 text-white whitespace-nowrap px-3 flex gap-2 items-center bg-[#0c6bac] hover:bg-sky-800 cursor-pointer">
                 Apply Now
               </button>
             </div>
